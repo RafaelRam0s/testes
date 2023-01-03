@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Rafael Ramos da Silva" />
+    <meta name="description" content="Página com configurações padrão, para que eu possa ter uma noção de como estão as formatações e os padrões do que eu defini e utilizo com frequência." />
+    <meta name="keywords" content="exemplos, html, css, preferencias, site" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="license" href="./../../LICENSE">
+    <link rel="icon" href="./midia/icones/icone_logo_r_16px.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+    
+    <title>Modelo de site html</title>
+
+    <link rel="stylesheet" href="../framework/fontawesome/fontawesome-free-6.2.1-web/css/all.min.css">
+</head>
+<body>
+
+    <!-- 
+        <div id="preloader">
+            <div>
+                <i class="fa-solid fa-spinner animacao_rodando"></i>
+                Carregando...
+            </div>
+        </div> 
+    -->
+
+    <div id="corpo">
+
+        <header id="cabecalho">
+            <div>
+                <div>
+                    <a href="./index.html">
+                        <div class="logo_em_css">
+                            RanCode
+                        </div>
+                    </a>
+                </div>
+
+                <div class="display_none_600px">
+                    <span class="mensagem_menu">Hello World!</span>
+                </div>
+
+                <div id="_abrir_menu_links">
+                    <button type="button" onclick="
+                        document.getElementById('_menu_links').style.display = 'block';
+                        setTimeout(() => {document.getElementById('_menu_links').style.maxHeight = '40vh';}, 100);
+
+                        document.getElementById('_abrir_menu_links').style.display = 'none';
+                        document.getElementById('_fechar_menu_links').style.display = 'block';
+                    ">
+                        <i class="fa-solid fa-bars" style="padding: 0px 12px 0px 12px;"></i>
+                    </button>
+                </div>
+                <div id="_fechar_menu_links">
+                    <button type="button" onclick="
+                        document.getElementById('_menu_links').style.maxHeight = '0vh';
+                        setTimeout(() => {document.getElementById('_menu_links').style.display = 'none';}, 100);
+
+                        document.getElementById('_abrir_menu_links').style.display = 'block';
+                        document.getElementById('_fechar_menu_links').style.display = 'none';
+                    ">
+                        <i class="fa-solid fa-x"  style="padding: 0px 12px 0px 12px;"></i>
+                    </button>
+                </div> 
+
+            </div>
+
+            <nav id="_menu_links">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Menu principal</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 2</a>
+                        </li>
+                        <li class="aba_de_categorias">
+                            <span>Aba de categorias 1</span>
+                            <ul>
+                                <li>
+                                    <a href="#">Site 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Site 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <div>
+                <h2>Conteúdo</h2>
+
+                <section>
+                    <h3>Paleta de cores:</h3>
+
+                    <div>
+                        <div class="bloco_cor_a1"></div>
+                        <div class="bloco_cor_a2"></div>
+                        <div class="bloco_cor_a3"></div>
+                        <div class="bloco_cor_a4"></div>
+                        <div class="bloco_cor_a5"></div>
+                        <div class="bloco_cor_a6"></div>
+                        <div class="bloco_cor_a7"></div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Tamanhos de texto:</h3>
+
+                    <div>
+                        <h1>Teste h1</h1>
+                        <h2>Teste h2</h2>
+                        <h3>Teste h3</h3>
+                        <h4>Teste h4</h4>
+                        <h5>Teste h5</h5>
+                        <h6>Teste h6</h6>
+                        <p>Teste p</p>
+                    </div>
+                </section>
+                    
+                <section>
+                    <h3>Exemplos com link:</h3>
+
+                    <div>
+                        <p> Link não visitado <span class="hyperlink_nao_visitado">Teste</span> </p>
+
+                        <p> Link já visitado <span class="hyperlink_visitado">Teste</span> </p>
+
+                        <p> Link pressionado <span href="#" class="hyperlink_pressionado">Teste</span> </p>
+
+                        <p> <a href="#">Link</a> </p>
+                    </div>
+                </section>
+                    
+                <section>
+                    <h3>Exemplos de lista:</h3>
+
+                    <div>
+
+                        <p>Lista ordenada:</p>
+
+                        <ol>
+                            <li>Primeiro item</li>
+                            <li>Segundo item</li>
+                        </ol>
+
+                        <p>Lista não-ordenada:</p>
+
+                        <ul>
+                            <li>Primeiro item</li>
+                            <li>Segundo item</li>
+                        </ul>
+
+                        <p>Lista de descrição:</p>
+
+                        <dl>
+                            <dt> Titulo do dado &lt;dt&gt; </dt>
+                            <dd> Descrição da tagname &lt;dt&gt; </dd>
+                            
+                            <dt> Titulo do dado &lt;dd&gt; </dt>
+                            <dd> Descrição da tagname &lt;dd&gt; </dd>
+                        </dl>
+
+                    </div>
+                </section>
+                    
+                <section>
+                    <h3>Tipos de marcações textuais:</h3>
+
+                    <div>
+
+                        <p>Texto <strong>Negrito</strong></p>
+
+                        <p>Texto <em>Enfatizado/Itálico</em></p>
+
+                        <p>Texto <mark>Marcado</mark></p>
+                        
+                        <p>Texto <small>Pequeno</small></p>
+
+                        <p>Texto <del>deletado</del> e <ins>inserido</ins></p>
+
+                        <p>Texto <sub>subscrito</sub> e <sup>sobrescrito</sup></p>
+
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Tipos de mídias:</h3>
+
+                    <div>
+                        <p>Imagem:</p>
+
+                        <div>
+
+                            <figure class="conteiner_de_midia">
+                                <picture>
+                                    <source media="(max-width: 600px)" srcset="./midia/imagens/imagem_conceitual_paleta_de_cores_01_pq.png" width="300" height="300" />
+                                    <img src="./midia/imagens/imagem_conceitual_paleta_de_cores_01.png" alt="Triangulos de diversos tamanhos e cores" width="810" height="603" />
+                                </picture>
+                                
+                                <figcaption>Imagem com proporção original de 810x603px</figcaption>
+                            </figure>
+
+                        </div>
+                        
+                        <p>Áudio:</p>
+
+                        <div class="conteiner_de_midia">
+                            <audio controls>
+                                <source src="./../audios/musica_de_jogo.mp3" type="audio/mpeg">
+                                <source src="./../audios/musica_de_jogo.ogg" type="audio/ogg">
+                                Seu navegador não suporta os arquivos de áudio
+                            </audio>
+                        </div>
+
+                        <p>Vídeo:</p>
+
+                        <p>[@@@ Adicionar vídeo]</p>
+
+                        <p>Iframe:</p>
+                        
+                        <p>Descomentar o código que traz o Iframe [@@@ Problemas no console quando adicionado o iframe]</p>
+                        <!-- 
+                            <div class="conteiner_de_iframe_youtube">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/u9NE0jInb_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> 
+                        -->
+
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Referências textuais:</h3>
+
+                    <div>
+                        <p>- Endereços de contato:</p>
+                        
+                        <address>
+                            <a href="https://github.com/RafaelRam0s" target="_blank" rel="nofollow">
+                                <i class="fa-brands fa-github"></i>
+                                Github
+                            </a>
+                            <br />
+                            <a href="https://www.instagram.com/rafael6ramos/" target="_blank" rel="nofollow">
+                                <i class="fa-brands fa-instagram"></i>
+                                Instagram
+                            </a>
+                        </address>
+
+                        <p>- Texto para <abbr title="Abreviation">abbr</abbr></p>
+
+                        <blockquote cite="https://www.w3schools.com/tags/tag_blockquote.asp">
+                            Bloco de referencia textual Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse porro ratione enim molestiae cupiditate perferendis natus tempora deserunt alias doloremque assumenda modi reiciendis pariatur aut, commodi voluptatibus odit sapiente eligendi?
+                        </blockquote>
+
+                        <p>- Parágrafo com <q cite="https://www.w3schools.com/tags/tag_q.asp">referencia textual em linha</q></p>
+
+                        <p>- Parágrafo com citação à <cite>W3Schools</cite></p>
+
+                        <pre>
+                            - Texto pré formatado
+                        </pre>
+
+                        <p>- Parágrafo que marca um elemento como o elemento que será explicado durante o texto atual: <dfn>dfn</dfn>.</p>
+                        
+                        <p>- Parágrafo que informa um código: <code>&lt;code&gt;</code></p>
+                    </div>
+                </section>
+                    
+                <section>
+                    <h3>Teste</h3>
+
+                    <div>
+                        <p>Teste Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione illo non iure quisquam maxime dicta quidem laboriosam, dolorem impedit corrupti, officia dolor neque ipsum sit excepturi qui? Incidunt in consectetur, enim et impedit libero accusamus sit consequuntur saepe earum, quam voluptate vitae doloribus doloremque iusto exercitationem mollitia unde sunt sed ducimus cum ipsa. Itaque odit, cupiditate voluptatibus natus harum esse omnis architecto voluptates consequuntur aspernatur error soluta cumque minima doloribus est asperiores vitae. Placeat rerum veniam officia. Corrupti porro, beatae commodi inventore, velit aliquam quas consectetur architecto <span style="display: inline;">at deserunt ullam fuga, quaerat</span> eveniet illo quia quod. Expedita ullam totam consequuntur. Culpa vel rerum eius sequi adipisci unde necessitatibus recusandae officiis quisquam! Dolor deserunt dolorem eum ratione, voluptatem quasi. Eaque, deleniti autem soluta mollitia eius iste rerum facilis non laborum aut voluptate, ipsam ad voluptatem! Voluptates soluta delectus doloribus nam vero asperiores hic a quis fugit, officiis temporibus sunt in facilis harum atque provident explicabo enim mollitia inventore itaque doloremque eveniet praesentium! Voluptatibus harum, pariatur quo maxime possimus in ut, perferendis aperiam libero dolor quas vel consequuntur iste, est deleniti! Ut impedit mollitia officia eligendi ipsam. Omnis eaque eligendi nulla laudantium iusto dicta quas impedit? Eaque, nam error odio exercitationem possimus aperiam neque at? Deserunt, omnis, incidunt deleniti neque alias voluptate perspiciatis perferendis aperiam molestias, harum sequi minima repudiandae. Obcaecati voluptas esse, repudiandae nam animi delectus quisquam quos ut architecto magnam suscipit aliquam quis pariatur dicta facere dolore numquam ea ratione. Iste tenetur repellat cum, labore eaque adipisci qui aliquid culpa accusamus sit necessitatibus nam odio? Minima ullam fugit iste esse nobis ab hic, dolor quo laboriosam doloremque, culpa fugiat facilis similique rerum eveniet beatae repellendus. Temporibus dignissimos suscipit magni cumque quos deleniti aspernatur blanditiis consequatur autem excepturi. Quaerat aliquid, earum, animi praesentium nostrum maxime modi minima, ab sequi nam expedita?</p>
+                    </div>
+                </section>
+                    
+                
+            </div>
+        </main>
+        
+        <hr />
+
+        <footer id="rodape">
+            <div>
+                <div id="area_informacoes" class="flex-direction_column_600px">
+                    <div class="width_100p_600px">
+                        <a href="./index.html">
+                            <div class="logo_em_css">
+                                RanCode
+                            </div>
+                        </a>
+                        <p><q>De grão em grão a galinha enche o papo</q></p>
+                    </div>
+                    <div class="width_100p_600px">
+                        <address>
+                            <p>Criado por: Rafael Ramos da Silva</p>
+                            <p>
+                                <i class="fa-brands fa-github"></i> 
+                                Github: <a href="https://github.com/RafaelRam0s" target="_blank" rel="nofollow">RafaelRam0s</a>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-instagram"></i>
+                                Instragram: <a href="https://www.instagram.com/rafael6ramos/" target="_blank" rel="nofollow">rafael6ramos</a>
+                            </p>
+                        </address>
+                    </div>
+                </div>
+                
+                <div id="area_copyright">
+                    <hr />
+                    <p>Atualmente, em 2023, sou estudante da <abbr title="Universidade Tecnológica Federal do Paraná">UTFPR</abbr>, Campus Ponta Grossa do curso de Bacharelado em Ciências da Computação</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
