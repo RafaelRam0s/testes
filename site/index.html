@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Rafael Ramos da Silva" />
+    <meta name="description" content="Página com configurações padrão, para que eu possa ter uma noção de como estão as formatações e os padrões do que eu defini e utilizo com frequência." />
+    <meta name="keywords" content="exemplos, html, css, preferencias, site" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="license" href="./../LICENSE">
+    <link rel="icon" href="./midia/icones/icone_logo_r_16px.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" media="all" />
+    
+    <title>Modelo de site html</title>
+
+    <!-- <link rel="stylesheet" href="../framework/fontawesome/fontawesome-free-6.2.1-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css">
+
+
+</head>
+<body>
+
+    <!-- 
+        <div id="preloader">
+            <div>
+                <i class="fa-solid fa-spinner animacao_rodando"></i>
+                Carregando...
+            </div>
+        </div> 
+    -->
+
+    <div id="corpo">
+
+        <header id="cabecalho">
+            <div>
+                <div>
+                    <a href="./index.html">
+                        <div class="logo_em_css">
+                            RanCode
+                        </div>
+                    </a>
+                </div>
+
+                <div class="display_none display_block_600px">
+                    <span class="mensagem_menu">Hello World!</span>
+                </div>
+
+                <div id="_abrir_menu_links">
+                    <button type="button" onclick="
+                        document.getElementById('_menu_links').style.display = 'block';
+                        setTimeout(() => {document.getElementById('_menu_links').style.maxHeight = '40vh';}, 100);
+
+                        document.getElementById('_abrir_menu_links').style.display = 'none';
+                        document.getElementById('_fechar_menu_links').style.display = 'block';
+                    ">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div id="_fechar_menu_links">
+                    <button type="button" onclick="
+                        document.getElementById('_menu_links').style.maxHeight = '0vh';
+                        setTimeout(() => {document.getElementById('_menu_links').style.display = 'none';}, 100);
+
+                        document.getElementById('_abrir_menu_links').style.display = 'block';
+                        document.getElementById('_fechar_menu_links').style.display = 'none';
+                    ">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </div> 
+
+            </div>
+
+            <nav id="_menu_links">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Menu principal</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 2</a>
+                        </li>
+                        <li class="aba_de_categorias">
+                            <span>Aba de categorias 1</span>
+                            <ul>
+                                <li>
+                                    <a href="#">Site 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">Site 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                        <li>
+                            <a href="#">Site 5</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <main>
+            <div>
+                <h2>Conteúdo</h2>
+
+                <section>
+                    <h3>Paleta de cores:</h3>
+
+                    <div>
+                        <div class="bloco_cor_a1"></div>
+                        <div class="bloco_cor_a2"></div>
+                        <div class="bloco_cor_a3"></div>
+                        <div class="bloco_cor_a4"></div>
+                        <div class="bloco_cor_a5"></div>
+                        <div class="bloco_cor_a6"></div>
+                        <div class="bloco_cor_a7"></div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Tamanhos de texto:</h3>
+
+                    <div>
+                        <h1>Teste h1</h1>
+                        <h2>Teste h2</h2>
+                        <h3>Teste h3</h3>
+                        <h4>Teste h4</h4>
+                        <h5>Teste h5</h5>
+                        <h6>Teste h6</h6>
+                        <p>Teste p</p>
+                    </div>
+                </section>
+                    
+                <section>
+                    <h3>Exemplos com link:</h3>
+
+                    <div>
+                        <p> Link não visitado <span class="hyperlink_nao_visitado">Teste</span> </p>
+
+                        <p> Link já visitado <span class="hyperlink_visitado">Teste</span> </p>
+
+                        <p> Link pressionado <span href="#" class="hyperlink_pressionado">Teste</span> </p>
+
+                        <p> <a href="#">Link</a> </p>
+                    </div>
+                </section>
+                    
+                <section>
+                    <h3>Exemplos de lista:</h3>
+
+                    <div>
+
+                        <p>Lista ordenada:</p>
+
+                        <ol>
+                            <li>Primeiro item</li>
+                            <li>Segundo item</li>
+                        </ol>
+
+                        <p>Lista não-ordenada:</p>
+
+                        <ul>
+                            <li>Primeiro item</li>
+                            <li>Segundo item</li>
+                        </ul>
+
+                        <p>Lista de descrição:</p>
+
+                        <dl>
+                            <dt> Titulo do dado &lt;dt&gt; </dt>
+                            <dd> Descrição da tagname &lt;dt&gt; </dd>
+                            
+                            <dt> Titulo do dado &lt;dd&gt; </dt>
+                            <dd> Descrição da tagname &lt;dd&gt; </dd>
+                        </dl>
+
+                    </div>
+                </section>
+                    
+                <section>
+                    <h3>Tipos de marcações textuais:</h3>
+
+                    <div>
+
+                        <p>Texto <strong>Negrito</strong></p>
+
+                        <p>Texto <em>Enfatizado/Itálico</em></p>
+
+                        <p>Texto <mark>Marcado</mark></p>
+                        
+                        <p>Texto <small>Pequeno</small></p>
+
+                        <p>Texto <del>deletado</del> e <ins>inserido</ins></p>
+
+                        <p>Texto <sub>subscrito</sub> e <sup>sobrescrito</sup></p>
+
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Tipos de mídias:</h3>
+
+                    <div>
+                        <p>Imagem:</p>
+
+                        <div>
+
+                            <figure class="conteiner_de_midia">
+                                <picture>
+                                    <source media="(max-width: 600px)" srcset="./midia/imagens/imagem_conceitual_paleta_de_cores_01_pq.png" width="300" height="300" />
+                                    <img src="./midia/imagens/imagem_conceitual_paleta_de_cores_01.png" alt="Triangulos de diversos tamanhos e cores" width="810" height="603" />
+                                </picture>
+                                
+                                <figcaption>Imagem com proporção original de 810x603px</figcaption>
+                            </figure>
+
+                        </div>
+                        
+                        <p>Áudio:</p>
+
+                        <div class="conteiner_de_midia">
+                            <audio controls="controls">
+                                <source src="./midia/audios/musica_de_jogo.mp3" type="audio/mpeg">
+                                <source src="./midia/audios/musica_de_jogo.ogg" type="audio/ogg">
+                                Seu navegador não suporta os arquivos de áudio
+                            </audio>
+                        </div>
+
+                        <p>Vídeo:</p>
+
+                        <div class="conteiner_de_midia">
+                            <video controls="controls" width="320" height="176">
+                                <source src="./midia/videos/mov_bbb.mp4" type="video/mp4">
+                                <source src="./midia/videos/mov_bbb.ogv" type="video/ogg">
+                                Seu navegador não suporta os arquivos de vídeo
+                            </video>
+                        </div>
+
+                        <p>Iframe:</p>
+                        
+                        <p>Descomentar o código que traz o Iframe [@@@ Problemas no console quando adicionado o iframe]</p>
+                    
+                        <!-- <div class="conteiner_de_iframe_youtube">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/u9NE0jInb_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>  -->
+                    
+
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Referências textuais:</h3>
+
+                    <div>
+                        <p>- Endereços de contato:</p>
+                        
+                        <address>
+                            <a href="https://github.com/RafaelRam0s" target="_blank" rel="nofollow">
+                                <i class="fa-brands fa-github"></i>
+                                Github
+                            </a>
+                            <br />
+                            <a href="https://www.instagram.com/rafael6ramos/" target="_blank" rel="nofollow">
+                                <i class="fa-brands fa-instagram"></i>
+                                Instagram
+                            </a>
+                        </address>
+
+                        <p>- Texto para <abbr title="Abreviation">abbr</abbr></p>
+
+                        <blockquote cite="https://www.w3schools.com/tags/tag_blockquote.asp">
+                            Bloco de referencia textual Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse porro ratione enim molestiae cupiditate perferendis natus tempora deserunt alias doloremque assumenda modi reiciendis pariatur aut, commodi voluptatibus odit sapiente eligendi?
+                        </blockquote>
+
+                        <p>- Parágrafo com <q cite="https://www.w3schools.com/tags/tag_q.asp">referencia textual em linha</q></p>
+
+                        <p>- Parágrafo com citação à <cite>W3Schools</cite></p>
+
+                        <pre>
+                            - Texto pré formatado
+                        </pre>
+
+                        <p>- Parágrafo que marca um elemento como o elemento que será explicado durante o texto atual: <dfn>dfn</dfn>.</p>
+                        
+                        <p>- Parágrafo que informa um código: <code>&lt;code&gt;</code></p>
+                    </div>
+                </section>
+                    
+                <section>
+                    <h3>Tabelas:</h3>
+
+                    <div>
+                        
+                        <p>Tabela 1, com tópicos na horizontal:</p>
+
+                        <div class="container_de_tabela">
+                            <table>
+                                <caption>Teste</caption>
+                                <tr>
+                                    <th scope="col">teste 1</th>
+                                    <th scope="col">teste 2</th>
+                                </tr>
+                                <tr>
+                                    <td>Célula 1</td>
+                                    <td>Célula 2</td>
+                                </tr>
+                                <tr>
+                                    <td>Célula 3</td>
+                                    <td>Célula 4</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <p>Tabela 2, com tópicos na vertical:</p>
+
+                        <div class="container_de_tabela">
+                            <table>
+                                <caption>Título de tabela</caption>
+                                <tr>
+                                    <th scope="row">Tópico 1</th>
+                                    <td>Célula 1</td>
+                                    <td>Célula 2</td>
+                                    <td>Célula 3</td>
+                                    <td>Célula 4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tópico 2</th>
+                                    <td>Célula 5</td>
+                                    <td>Célula 6</td>
+                                    <td>Célula 7</td>
+                                    <td>Célula 8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tópico 3</th>
+                                    <td>Célula 9</td>
+                                    <td>Célula 10</td>
+                                    <td>Célula 11</td>
+                                    <td>Célula 12</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tópico 4</th>
+                                    <td>Célula 13</td>
+                                    <td>Célula 14</td>
+                                    <td>Célula 15</td>
+                                    <td>Célula 16</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Formulários:</h3>
+
+                    <div>
+                        <h4>Botões</h4>
+
+                        <div>
+                            <button type="button">Tipo button</button>
+                            <button type="reset">Tipo reset</button>
+                            <button type="submit">Tipo submit</button>
+                        </div>
+
+                        <h4>Input Text</h4>
+
+                        <div>
+                            <form action="#" method="GET" autocomplete="on">
+                                <label for="id_nome">Nome:</label>
+                                <input type="text" id="id_nome" name="name_nome" required="required" minlength="2" maxlength="255" placeholder="Digite um nome..." autocomplete="name" />
+                                <button type="submit">Enviar formulário</button>
+                            </form>
+                        </div>
+
+                        <h4>Input Password</h4>
+
+                        <div>
+                            <form action="#" method="GET" autocomplete="off">
+                                <label for="id_senha">Senha:</label>
+                                <input type="password" id="id_senha" name="name_senha" />
+                                <button type="submit">Enviar formulário</button>
+                            </form>
+                        </div>
+
+                        <h4>Input Checkbox</h4>
+
+                        <div>
+                            <form action="#" method="GET" autocomplete="off">
+                                <label for="id_checkbox">Caixa de seleção</label>
+                                <input type="checkbox" id="id_checkbox" name="name_checkbox" value="Marcado" />
+
+                                <button type="submit">Enviar formulário</button>
+                            </form>
+                        </div>
+
+                        <h4>Input Radio</h4>
+
+                        <div>
+                            
+                            <form action="#" method="GET" autocomplete="off">
+                                <label for="id_radio1">radio1</label>
+                                <input type="radio" id="id_radio1" name="name_radio" value="radio1" checked="checked" />
+                                <label for="id_radio2">radio2</label>
+                                <input type="radio" id="id_radio2" name="name_radio" value="radio2" />
+
+                                <button type="submit">Enviar formulário</button>
+                            </form>
+                        </div>
+
+                        <h4>Input Color</h4>
+
+                        <div>
+                            <form action="#" method="GET" autocomplete="off">
+                                <label for="id_color">color</label>
+                                <input type="color" id="id_color" name="name_color" value="#0099ff" />
+
+                                <button type="submit">Enviar formulário</button>
+                            </form>
+                        </div>
+
+                        <h4>Input Range</h4>
+
+                        <div>
+                            <form action="#" method="GET" autocomplete="off">
+                                <label for="id_range">range</label>
+                                <input type="range" id="id_range" name="name_range" min="1" max="10" value="2" />
+
+                                <button type="submit">Enviar formulário</button>
+                            </form>
+                        </div>
+
+                        <h4>Input File</h4>
+                        
+                        <div>
+                            <form action="#" method="POST" autocomplete="off">
+                                <label for="id_file">file</label>
+                                <input type="file" id="id_file" name="name_file" />
+
+                                <button type="submit">Enviar formulário</button>
+                            </form>
+                        </div>
+
+                        <h4>Select, Option, Optgroup</h4>
+                        
+                        <div>
+                            <form action="#" method="GET" autocomplete="off">
+                                <label for="id_select">Aba de seleções</label>
+                                <select id="id_select" name="name_select" required>
+                                    <option value="" disabled>Selecione uma opção</option>
+                                    <option value="select_option_0">0</option>
+                                    <optgroup label="optgroup1">
+                                        <option value="select_option_1">1</option>
+                                        <option value="select_option_2">2</option>
+                                        <option value="select_option_3">3</option>
+                                    </optgroup>
+                                    <optgroup label="optgroup2">
+                                        <option value="select_option_4">4</option>
+                                        <option value="select_option_5">5</option>
+                                        <option value="select_option_6">6</option>
+                                    </optgroup>
+                                    <option value="select_option_7">7</option>
+                                </select>
+
+                                <button type="submit">Enviar formulário</button>
+                            </form>
+                        </div>
+
+                        <h4>Datalist</h4>
+
+                        <div>
+                            <form action="#" method="GET" autocomplete="off">
+                                <label for="name_datalist">datalist</label>
+                                <input type="text" id="id_datalist" name="name_datalist" list="datalist_1" />
+
+                                <datalist id="datalist_1">
+                                    <option value="datalist_option_1">datalist_option_1</option>
+                                    <option value="datalist_option_2">datalist_option_2</option>
+                                    <option value="datalist_option_3">datalist_option_3</option>
+                                </datalist>
+                                
+                                <button type="submit">Enviar formulário</button>
+                            </form>
+                        </div>
+
+                        <h4>Textarea</h4>
+                        
+                        <div>   
+                            <form action="#" method="GET" autocomplete="off">
+                                <label for="id_textarea">textarea</label>
+                                <textarea id="id_textarea" name="name_textarea" cols="30" rows="5"></textarea>
+                                
+                                <button type="submit">Enviar formulário</button>
+                            </form>
+                        </div>
+
+                        <h4>Output</h4>
+
+                        <div>
+                            <label for="output">Output:</label>
+                            <output id="id_output" name="name_output">Saída de dados</output>
+                        </div>
+
+                        <h4>Campo de Formulário</h4>
+
+                        <div>
+                            <form action="#" method="GET">
+                                <fieldset>
+                                    <legend>[@@@ Campo de intputs à editar]</legend>
+
+                                    <div>
+                                        <label for="id_numero">Numérico</label>
+                                        <input type="number" id="id_numero" name="name_numero" min="0" max="10" step="0.01" />
+                                    </div>
+
+                                    <div>
+                                        <label for="id_month">month</label>
+                                        <input type="month" id="id_month" name="name_month" value="2020-07" />
+                                    </div>
+
+                                    <div>
+                                        <label for="id_date">date</label>
+                                        <input type="date" id="id_date" name="name_date" value="2002-07-13" />
+                                    </div>
+
+                                    <div>
+                                        <label for="id_time">time</label>
+                                        <input type="time" id="id_time" name="name_time" />
+                                    </div>
+
+                                    <div>
+                                        <label for="id_email">email</label>
+                                        <input type="email" id="id_email" name="name_email" />
+                                    </div>
+
+                                    <div>
+                                        <label for="id_tel">tel</label>
+                                        <input type="tel" id="id_tel" name="name_tel" pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$" placeholder="(xx) xxxxx-xxxx" />
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        
+                        
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Teste</h3>
+
+                    <div>
+                        <p>Teste Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione illo non iure quisquam maxime dicta quidem laboriosam, dolorem impedit corrupti, officia dolor neque ipsum sit excepturi qui? Incidunt in consectetur, enim et impedit libero accusamus sit consequuntur saepe earum, quam voluptate vitae doloribus doloremque iusto exercitationem mollitia unde sunt sed ducimus cum ipsa. Itaque odit, cupiditate voluptatibus natus harum esse omnis architecto voluptates consequuntur aspernatur error soluta cumque minima doloribus est asperiores vitae. Placeat rerum veniam officia. Corrupti porro, beatae commodi inventore, velit aliquam quas consectetur architecto <span style="display: inline;">at deserunt ullam fuga, quaerat</span> eveniet illo quia quod. Expedita ullam totam consequuntur. Culpa vel rerum eius sequi adipisci unde necessitatibus recusandae officiis quisquam! Dolor deserunt dolorem eum ratione, voluptatem quasi. Eaque, deleniti autem soluta mollitia eius iste rerum facilis non laborum aut voluptate, ipsam ad voluptatem! Voluptates soluta delectus doloribus nam vero asperiores hic a quis fugit, officiis temporibus sunt in facilis harum atque provident explicabo enim mollitia inventore itaque doloremque eveniet praesentium! Voluptatibus harum, pariatur quo maxime possimus in ut, perferendis aperiam libero dolor quas vel consequuntur iste, est deleniti! Ut impedit mollitia officia eligendi ipsam. Omnis eaque eligendi nulla laudantium iusto dicta quas impedit? Eaque, nam error odio exercitationem possimus aperiam neque at? Deserunt, omnis, incidunt deleniti neque alias voluptate perspiciatis perferendis aperiam molestias, harum sequi minima repudiandae. Obcaecati voluptas esse, repudiandae nam animi delectus quisquam quos ut architecto magnam suscipit aliquam quis pariatur dicta facere dolore numquam ea ratione. Iste tenetur repellat cum, labore eaque adipisci qui aliquid culpa accusamus sit necessitatibus nam odio? Minima ullam fugit iste esse nobis ab hic, dolor quo laboriosam doloremque, culpa fugiat facilis similique rerum eveniet beatae repellendus. Temporibus dignissimos suscipit magni cumque quos deleniti aspernatur blanditiis consequatur autem excepturi. Quaerat aliquid, earum, animi praesentium nostrum maxime modi minima, ab sequi nam expedita?</p>
+                    </div>
+                </section>
+                    
+                
+            </div>
+        </main>
+        
+        <hr />
+
+        <footer id="rodape">
+            <div>
+                <div id="area_informacoes" class="flex-direction_column_600px">
+                    <div class="width_100p_600px">
+                        <a href="./index.html">
+                            <div class="logo_em_css">
+                                RanCode
+                            </div>
+                        </a>
+                        <p><q>De grão em grão a galinha enche o papo</q></p>
+                        <p>[@@@ Criar termos de uso]</p>
+                        <p>[@@@ Criar política de privacidade]</p>
+                        <p>[@@@ Criar links de parceria]</p>
+                        <p>[@@@ Criar área de selos de qualidade do site]</p>
+                    </div>
+                    <div class="width_100p_600px">
+                        <address>
+                            <p>Criado por: Rafael Ramos da Silva</p>
+                            <p>
+                                <i class="fa-brands fa-github"></i> 
+                                Github: <a href="https://github.com/RafaelRam0s" target="_blank" rel="nofollow">RafaelRam0s</a>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-instagram"></i>
+                                Instragram: <a href="https://www.instagram.com/rafael6ramos/" target="_blank" rel="nofollow">rafael6ramos</a>
+                            </p>
+                            <p>[@@@ Criar email para contato]</p>
+                            <p>[@@@ Criar área de copyright]</p>
+                        </address>
+                    </div>
+                </div>
+                
+                <div id="area_copyright">
+                    <hr />
+                    <p>Atualmente, em 2023, sou estudante da <abbr title="Universidade Tecnológica Federal do Paraná">UTFPR</abbr>, Campus Ponta Grossa do curso de Bacharelado em Ciências da Computação</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
